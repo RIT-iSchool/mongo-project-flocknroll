@@ -27,6 +27,13 @@ app.get('/', async (req, res) => {
     res.send(result);
 });
 
+app.get('/stateBoundaries', async (req, res) => {
+    const states = db.collection('states');
+    const result = await states.find({}).toArray();
+    console.log(result);
+    res.send(result);
+});
+
 app.post('/saveUser', async (req, res) => {
     data = req.body
 
