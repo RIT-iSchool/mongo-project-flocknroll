@@ -30,9 +30,10 @@ Enjoy the interactive geospatial functionality and cool bird images. Don't forge
 ## Setup
 
 ### Docker Setup:
-- To spin up complete application run `docker-compose up` in BirdSightings directory.
-- Once all containers are created and running successfully, access the application on `http://localhost:3000`
-- Use `docker-copose down` to shutdown containers.
+- To spin up application using docker first, run `docker-compose up mongodb`
+- Once mongodb container is up and running execute `docker-compose up backend`
+- After both containers are created and running successfully, access the application on `http://localhost:3000`
+- Use `docker-copose down` to shutdown the containers.
 
 ### Manual Setup:
 #### Database:
